@@ -11,7 +11,7 @@ import Lottie
 class AnimationVC: UIViewController {
     let animationV = AnimationView()
     var count = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         animationCall()
@@ -30,7 +30,7 @@ class AnimationVC: UIViewController {
         
         animationV.animation = Animation.named("jewels")
         animationV.frame = view.bounds
-       animationV.contentMode = .scaleAspectFit
+        animationV.contentMode = .scaleAspectFit
         animationV.loopMode = .loop
         animationV.play()
         view.addSubview(animationV)
